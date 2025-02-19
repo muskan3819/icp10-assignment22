@@ -1,9 +1,121 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-       <title>indexpage</title>
-</head>
-<body>
-    
+    <title>Image Switcher</title>
+   <style>
+    .con{
+        width: 400px;
+        background-color: #f1f1f1;
+        display: block;
+        justify-content: center;
+        margin: 70px auto;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .lamp{
+        height: 200px;
+        display: block;
+        margin: 30px auto;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn1{
+        width: 100px;
+        font-size: 20px;
+        border: none;
+        border-radius: 15px;
+    }
+    .btn-on{
+        background-color: rgb(6, 106, 6);
+        color: #fcfcfc;
+    }
+    .btn-off{
+        background-color: rgb(250, 61, 61);
+        color: #fcfcfc;
+
+    }
+
+    .con1{
+        width: 400px;
+        background-color: #f1f1f1;
+        display: block;
+        justify-content: center;
+        margin: 70px auto;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .fan{
+        height: 200px;
+        display: block;
+        margin: 30px auto;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn2{
+        width: 100px;
+        font-size: 20px;
+        border: none;
+        border-radius: 15px;
+    }
+    .btn-on1{
+        background-color: rgb(6, 106, 6);
+        color: #fcfcfc;
+    }
+    .btn-off1{
+        background-color: rgb(250, 61, 61);
+        color: #fcfcfc;
+
+    }
+   </style>
 </body>
+<div class="con">
+    <img src="a2.png" id="lamp" class="lamp">
+<div class="btn">
+    <button class="btn1 btn-on" onclick="on()">on</button>
+    <button class="btn1 btn-off" onclick="off()">off</button>
+</div>
+</div>
+
+<div class="con1">
+    <img src="on1.png" id="fan" class="fan">
+<div class="btn">
+    <button class="btn2 btn-on1" onclick="on1()">on</button>
+    <button class="btn2 btn-off1" onclick="off1()">off</button>
+</div>
+</div>
+
+
+
+
+<script>
+    const lampElement =document.getElementById('lamp');
+    
+    function on(){
+        lampElement.src='a2.png';
+
+    }
+
+    function off(){
+        lampElement.src='a1.png';
+
+    }
+
+    const fanElement =document.getElementById('fan');
+    
+    function on1(){
+        fanElement.src='on1.png';
+
+    }
+
+    function off1(){
+        fanElement.src='off1.png';
+
+    }
+</script>
 </html>
